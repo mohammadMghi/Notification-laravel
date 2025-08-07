@@ -7,5 +7,5 @@ use App\Models\User;
 
 interface MessageServiceInterface 
 {
-    public function send(User $user , Message $message, string $driver_name);
+    public function send(User $user , Message $message, string $driver_name) : Message|null;
 }
