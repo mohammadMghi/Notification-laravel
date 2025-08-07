@@ -10,5 +10,5 @@ interface MessageStrategyInterface
 {
     public function setDriver(DriverInterface $driver);
     
-    public function send(User $user,Message $message);
+    public function send(User $user,Message $message) : Message;
 }

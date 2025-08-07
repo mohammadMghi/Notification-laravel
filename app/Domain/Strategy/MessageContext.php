@@ -19,10 +19,10 @@ class MessageContext implements MessageStrategyInterface
      * Sned message
      * @param \App\Models\User $user
      * @param \App\Models\Message $message
-     * @return void
+     * @return Message
      */
-    public function send(User $user, Message $message)
+    public function send(User $user, Message $message): Message
     {
-        $this->driver->send($user , $message);
+        return $this->driver->send($user , $message);
     }
 }

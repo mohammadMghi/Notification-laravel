@@ -10,7 +10,7 @@ use App\Domain\Strategy\MessageStrategyInterface;
 
 class DriverFactory
 {  
-    public static function selectDriver($driverName) : DriverInterface
+    public function selectDriver($driverName) : DriverInterface
     {
         return match($driverName) {
             'gmail' => new GmailDriver,

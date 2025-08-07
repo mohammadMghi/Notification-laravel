@@ -7,5 +7,5 @@ use App\Models\User;
 
 interface DriverInterface
 {
-    public function send(User $user ,Message $message);
+    public function send(User $user ,Message $message) : Message;
 }
